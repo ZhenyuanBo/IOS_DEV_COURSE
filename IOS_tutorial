@@ -1,0 +1,3 @@
+1. 'Single View App' is not available in Xcode12 any more, choose 'App' instead
+2. interface builder - press control and connect the image to point where we want to define the 
+IBOutlet
