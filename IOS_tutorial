@@ -1,3 +1,30 @@
 1. 'Single View App' is not available in Xcode12 any more, choose 'App' instead
 2. interface builder - press control and connect the image to point where we want to define the 
 IBOutlet
+3. Button Type - "Touch Up Inside": user's finger is positioned within the boundary of the Button
+4. String concatenation:
+let a = "Hello"
+let b = "World"
+
+let first = a + ", " + b
+let second = "\(a), \(b)"
+
+You could also do:
+
+var c = "Hello"
+c += ", World"
+
+5. if a variable's value is not mutated, we can use 'let' instead; let keywords set a constant value
+6. double can hold more decimals than float
+7. range operator
+    1). inclusive range operator: Int.random(in: lower ... upper)
+    2). exclude upper: Int.random(in: lower ..< upper)
+
+8. add constraint and alignment
+9. Autolayout
+    1. group views into stack views
+    2. add constraints to it (relative to safe area)
+    3. alignment - set to fill
+    4. distribution - set to fill equally
+    5. spacing set to 1 
+    6. we can also set superview to bottom
