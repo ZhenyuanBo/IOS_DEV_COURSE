@@ -58,4 +58,14 @@ to remove Optional, we can add "!"
 
 when we get a value out from a dictionary using the key, the value is optional. we need to unwrap it if it is not a null value
 
-13. MVC - 
+13. MVC - Model View Controller
+
+14. external/internal parameter
+
+    func checkAnswer(answer userAnswer: String){
+        let actualAnswer = quiz[questionNumber].answer
+    }
+
+OR: we do not need to define external parameter name
+
+func checkAnswer(_ userAnswer: String){}
