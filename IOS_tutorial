@@ -74,3 +74,7 @@ func checkAnswer(_ userAnswer: String){}
 
 Note: for the variables defined using 'var' keyword, if we mutate the value within the struct itself, an error of immutability will be thrown out; however, if we mutate the value outside of the struct, we will be allowed to do so.
 
+16. when self is created from the background, all the properties created are actually defined using 'let' keyword. Thus, self iself 
+is immutable
+
+17. mutating function can only be called by a mutable object, which is defined using 'var' keyword. If this object is defined using 'let' keyword, mutating function can't be invoked by a immutable object (defined using 'let')
