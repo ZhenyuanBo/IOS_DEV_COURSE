@@ -28,3 +28,12 @@ c += ", World"
     4. distribution - set to fill equally
     5. spacing set to 1 
     6. we can also set superview to bottom
+
+10. function signature
+
+func myFunction(parameter: DataType){
+
+}
+
+11. var myAge: Int = 3
+    var myAge: String = "Three"
