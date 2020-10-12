@@ -69,3 +69,8 @@ when we get a value out from a dictionary using the key, the value is optional. 
 OR: we do not need to define external parameter name
 
 func checkAnswer(_ userAnswer: String){}
+
+15. struct is immutable
+
+Note: for the variables defined using 'var' keyword, if we mutate the value within the struct itself, an error of immutability will be thrown out; however, if we mutate the value outside of the struct, we will be allowed to do so.
+

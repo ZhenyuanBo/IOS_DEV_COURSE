@@ -25,7 +25,31 @@ struct QuizBrain{
         Question(q: "Chocolate affects a dog's heart and nervous system; a few ounces are enough to kill a small dog.", a: "True")
     ]
     
-    func checkAnswer(_ userAnswer: String){
-        let actualAnswer = quiz[questionNumber].answer
+    //_ external parameter
+    func checkAnswer(_ userAnswer: String) -> Bool{
+        if userAnswer == quiz[questionNumber].answer{
+            return true
+        }else{
+            return false
+        }
     }
+    
+    //retrieve question text
+    func getQuestionText()->String{
+        return quiz[questionNumber].text
+    }
+    
+    //retrieve progress value
+    func getProgress()->Float{
+        return Float(questionNumber+1) / Float(quiz.count)
+    }
+    
+    func nextQuestion(){
+        if questionNumber < quiz.count-1{
+            questionNumber+=1
+        }else{
+            questionNumber=0
+        }
+    }
+
 }
