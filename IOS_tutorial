@@ -37,3 +37,23 @@ func myFunction(parameter: DataType){
 
 11. var myAge: Int = 3
     var myAge: String = "Three"
+
+12 optional
+
+var hardness: String? - optional DataType
+it can store a string or can be Nil (empty data)
+
+var player1Username: String = nil 
+this gives an error because variable expects a string value
+
+correction:
+
+var player1Username: String? = nil
+
+player1Username = "jackbauerisawesome"
+
+print(player1Username) ---> Optional("jackbauerisawesome")
+
+to remove Optional, we can add "!"
+
+when we get a value out from a dictionary using the key, the value is optional. we need to unwrap it if it is not a null value
