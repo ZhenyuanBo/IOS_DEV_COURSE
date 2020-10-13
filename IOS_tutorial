@@ -78,3 +78,15 @@ Note: for the variables defined using 'var' keyword, if we mutate the value with
 is immutable
 
 17. mutating function can only be called by a mutable object, which is defined using 'var' keyword. If this object is defined using 'let' keyword, mutating function can't be invoked by a immutable object (defined using 'let')
+
+18. struct vs. class
+
+let skeleton2 = skeleton1 this is copied by reference
+both skeleton2 and skeleton1 are pointing to the same object
+
+struct: create another copy so that it is separated from the original object
+
+structs are passed by value 
+classes are passed by reference
+
+
