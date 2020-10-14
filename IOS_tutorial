@@ -140,6 +140,46 @@ if let safeOptional = myOptional{
 if myOptional is a nil value, then else clause will be executed; otherwise, 
 if clause will be executed if it is a non-nil value
 
+4. Nil Coalescing operator
+
+optional ?? defaultValue
+
+let myOptional: String?
+
+myOptional = nil
+
+let text: String = myOptional ?? "I am the default" 
+
+if it is a nil value, then the default value will be assigned to text
+
+
+5. Optional chaining
+
+optional?.property ---> if optional is not a nil, then we can access the property
+optional?,method() ----> if optional is not a nil, then we can access the method
+
+
+struct MyOptional{
+    var property = 123
+
+    func method(){
+        print("I am the struct's method.")
+    }
+}
+
+let myOptional: MyOptional?
+
+myOptional = nil
+
+print(myOptional?.property)  
+
+myOptional = MyOptional()
+
+print(myOptional?.method()) ----> since myOptional is not a nil value, method will be triggered
+
+
+
+
 
 
 
