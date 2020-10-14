@@ -89,4 +89,14 @@ struct: create another copy so that it is separated from the original object
 structs are passed by value 
 classes are passed by reference
 
+19. use struct by default
+
+when you need inheritance, you can use class
+
+struct: immutable
+
+class: passed by reference, can inherit from other classes
+
+20. use segue to connect from controller view to another view
+
 
