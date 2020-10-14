@@ -99,7 +99,48 @@ class: passed by reference, can inherit from other classes
 
 20. use segue to connect from controller view to another view
 
+we use cocoa touch class to create controller class - set subclass UIViewController
+
 
 21. Working with Optional
+
+1. Force Unwrapping
+
+we need to really think if the value could be a nil value when we wrap it, if it is a nil value and we unwrap it, an error will probably occur
+
+
+2. check for nil value
+
+if optional != nil {
+    optional!
+}
+
+3. optional binding
+
+if let safeOptional = optional{
+    safeOptional
+}
+
+we can bind the value of optional to the new safeOptional if it is not a nil value
+and we can work with the safeOptional
+
+example:
+
+let myOptional: String?
+
+myOptional = "Angela"
+
+if let safeOptional = myOptional{
+    let text: String = safeOptional
+    print(safeOptional)
+}else{
+    print("myOptional was found to be nil")
+}
+
+if myOptional is a nil value, then else clause will be executed; otherwise, 
+if clause will be executed if it is a non-nil value
+
+
+
 
 
