@@ -178,6 +178,60 @@ myOptional = MyOptional()
 print(myOptional?.method()) ----> since myOptional is not a nil value, method will be triggered
 
 
+22. add color asset
+1). click on Assets.xcasset 
+2). click on '+' Button
+3). set any appearance color to the color selected using the color picker
+
+23. change the background image based on the user's Model
+
+using vector image:
+1). drag pdf image to assets.xcassets and set it to 1x background
+2). check preserve vector on the right side menu
+3). select single scale for the scales
+
+
+24. Protocols
+
+protocol MyProtocol{
+    //define requirements; consider protocol like a certification
+}
+
+adopting the protocol
+struct MyStruct: MyProtocol{}
+
+class MyClass: MyProtocol{}
+
+class Bird{
+    var is Female = true
+
+    func layEgg(){
+        if isFemale{
+            print("The bird makes a new bird in a shell.")
+        }
+    }
+    func fly(){
+        print("The bird flaps its wings and lifts off into the sky.")
+    }
+}
+
+class Eagle: Bird{
+
+
+    func soar(){
+        print("The eagle glides in the air using air curents.")
+    }
+}
+
+let myEagle = Eagle()
+myEagle.fly()
+myEagle.layEgg()
+myEagle.soar()
+
+
+
+
+
 
 
 
