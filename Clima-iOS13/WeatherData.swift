@@ -1,9 +1,18 @@
-//
-//  WeatherData.swift
-//  Clima
-//
-//  Created by Zhenyuan Bo on 2020-10-16.
-//  Copyright © 2020 App Brewery. All rights reserved.
-//
+//property names have to match the names shown in the JSON result
 
 import Foundation
+
+struct WeatherData: Decodable{
+    let name: String
+    let main: Main
+    let weather: [Weather]
+}
+
+
+struct Main: Decodable{
+    let temp: Double
+}
+
+struct Weather: Decodable{
+    let description: String
+}
