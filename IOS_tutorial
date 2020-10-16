@@ -229,10 +229,131 @@ myEagle.layEgg()
 myEagle.soar()
 
 
+class Penguin: Bird{
+    func swim(){
+        print("The penguin paddles through the water.")
+    }
+}
 
 
+let myPenguin = Penguin()
+myPenguin.layEgg()
+myPenGuin.swim()
+myPenguin.fly() // penguin actually can't fly -- problem
+
+**********************************************************************
+we don't want penguin inherit some functionality that they should have
+**********************************************************************
+
+struct FlyMuseum{
+    func flyingDemo(FlyingObject: Bird){
+        flyingObject.fly()
+    }
+}
+
+let museum = FlyMuseum()
+museum.flyingDemo(flyingObject: myEagle)
+museum.flyingDemo(flyingObject: myPenguin) // this is not intended behavior
+
+class Airplane: Bird{
+    override func fly(){
+        print("The airplane uses its engine to lift off into the air.")
+    }
+}
+
+let myPlane = Airplane()
+myPlane.layEgg() ----> doesn't make any sense
+
+struct can't inherit!!!
 
 
+//every one has the capability to fly
+
+protocol CanFly{
+    func fly() ---> protocol methods must not have bodies
+}
+
+class Eagle: Bird, CanFly{
+    func soar(){
+
+    }
+    
+
+    //implement the fly method
+    func fly(){
+        print("The bird flaps its wings and lifts off into the sky.")
+    }
+}
+
+Penguin can't fly, so it doesn't need to implement fly() method
+
+//protocols can be adopted by struct or class
+struct Airplane: CanFly{
+    func fly(){
+        print("The airplen uses its engine to lift off into the air.")
+    }
+}
+
+struct FlyingMusuem{
+    //can use protocol as the data type
+    //all the objects that adopt this protocol must have fly() method
+    func flyingDemo(flyingObject: CanFly){
+        flyingObject.fly()
+    }
+}
+
+myEagle.fly()
+myPlane.fly()
+
+musuem.flyingDemo(flyingObject: myPlane)
+musuem.flyingDemo(flyingObject: myEagle)
+//can't do this:
+musuem.flyingDemo(flyingObject: myPenguin)
+
+you can adopt multiple protocols
+
+struct MyStructure: FirstProtcol, SecondProtocol{
+
+}
+
+class MyClass: SuperClass, FirstProcol, AnotherProtcol{
+
+}
+
+
+25. Delegate Design Pattern
+
+
+1). we need text field to notify the WeatherViewController when the 
+editing activity takes place
+2). UITextField can't know the identity of future classes --> this comes the Delegate
+design Pattern
+
+in order for a class to have the type UITextFieldDelegate, the class has to adopt it
+
+3). let textField = UITextField()
+
+textField.delegate = self //assign textField's delegate to the class itself
+
+whenever a change is made to the text field, this delegate will be notified, which means 
+
+class will be notified
+
+sequence of events:
+
+1). create textField  let textField = UITextField()
+2). textField.delegate = self
+
+in UITextField
+
+var delegate: UITextFieldDelegate 
+
+so, delegate is now pointing to self, which is pointing to the WeatherViewController
+we can do this because WeatherViewController adopts UITextFieldDelegate
+
+3). if textfield detecs user's activity, it will trigger: delegate.textFieldDidBeginEditing()
+
+which indirectly triggers textFieldDidBeginEditing defined in the WeatherViewController
 
 
 
