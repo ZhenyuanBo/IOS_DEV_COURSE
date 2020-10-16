@@ -16,6 +16,8 @@ class WeatherViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var searchTextField: UITextField!
     
+    var weatherManager = WeatherManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //enable go button --> inform view controller about user's input
@@ -48,7 +50,10 @@ class WeatherViewController: UIViewController, UITextFieldDelegate {
     //this function will be triggered when text field is done with editing
     func textFieldDidEndEditing(_ textField: UITextField) {
         //use searchTextField.text to get the weather for that city
-        
+//        weatherManager.fetchWeather(cityName: searchTextField.text!)
+        if let city = searchTextField.text{
+            weatherManager.fetchWeather(cityName: city)
+        }
         //clear the text field
         searchTextField.text = ""
     }
