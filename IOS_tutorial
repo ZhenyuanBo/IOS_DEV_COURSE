@@ -356,6 +356,73 @@ we can do this because WeatherViewController adopts UITextFieldDelegate
 which indirectly triggers textFieldDidBeginEditing defined in the WeatherViewController
 
 
+26 Example:
+
+protocol AdvancedLifeSupport{
+    func performCPR()
+}
+
+class EmergencyCallHandler{
+    var delegate: AdvancedLifeSupport?
+
+    func assessSituation(){
+
+    }
+
+    func medicalEmergency(){
+        delegate?.performCPR()
+    }
+}
+
+
+struct Paramedic: AdvancedLifeSupport{
+
+    init(handler: EmergencyCallHandler){
+        handler.delegate = self
+    }
+
+    func performCPR(){
+        print("The paramedic does chest compressions, 30 per second.")
+    }
+}
+
+
+let emillio = EmergencyCallHandler()
+let pete = Paramedic(handler: emilio)
+
+emilio.assessSituation()
+
+emilio.medicalEmergency() ---> pete.performCPR() will be triggered 
+
+Example 2:
+
+class Doctor: AdvancedLifeSupport{
+    init(handler: EmergencyCallHandler){
+        handler.delegate = self
+    }
+
+    func performCPR(){
+        print("The doctor does chest compressions, 30 per second.")
+    }
+
+    func useStethescope(){
+        print("Listening for heard sounds")
+    }
+}
+
+//automatically adopt AdvancedLifeSupport protocol
+class Surgeon: Doctor{
+    override func performCPR(){
+        super.performCPR()
+        print()
+    }
+
+    func useElectricDrill(){
+
+    }
+}
+
+let angela = Surgeon(handler: emilio)
 
 
 
