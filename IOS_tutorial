@@ -490,6 +490,15 @@ Another example:
 array.map{"\($0)"}
 
 
+30. computed property
+
+var aProperty: Int{
+    //have to provide an output
+
+    return 2+5 // this is computation
+}
+
+
 
 
 
