@@ -89,7 +89,7 @@ myFunc(val) ---> but, this needs exname changed to '_'
 so func signature will be:
 
 func myFunc(_ eman: Type){
-    
+
 }
 
 15. struct is immutable
@@ -522,5 +522,48 @@ var aProperty: Int{
 
 31 codable --> type alias for Decoddable & Encodable
 
+32 update UI from a completion handler
+
+we need to dispatch the call to update the label text to the main thread in the background
+
+33. extensions and default implementation for protocols
 
 
+extension type{
+
+}
+
+extend existing data type
+
+extension Double {
+    func round(to places: Int)->Double{
+        let precisionNumber = pow(10, Double(places))
+        var n = self
+        n = n * precisionNumber
+        n.round()
+        n = n/precisionNumber
+        return n
+    }
+}
+
+
+var myDouble = 3.14159
+
+myDouble = myDouble * 1000
+myDouble.round()
+myDouble = myDouble / 1000
+
+
+
+extension UIBUtton{
+    func makeCircular(){
+        self.clipsToBounds = true
+        self.layer.cornerRadius = self.frame.size.width/2
+    }
+}
+
+
+extension SomeProtocol{
+    //define default behavior
+    
+}

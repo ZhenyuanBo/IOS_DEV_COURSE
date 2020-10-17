@@ -61,7 +61,10 @@ class WeatherViewController: UIViewController, UITextFieldDelegate, WeatherManag
     
     //the first parameter is always the one that triggers this delegate method
     func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel){
-        print(weather.temperature)
+        DispatchQueue.main.async {
+            self.temperatureLabel.text = weather.temperatureString
+            self.conditionImageView.image = UIImage(systemName: weather.conditionName)
+        }
     }
     
     func didFailWithError(error: Error) {

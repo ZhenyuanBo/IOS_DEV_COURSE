@@ -27,7 +27,7 @@ struct WeatherManager{
     
     func performRequest(with urlString: String){
         if let url = URL(string: urlString){
-            //create URL session object
+            //create URL session object 
             let session = URLSession(configuration: .default)
             //give session a task
             //trailing closure
