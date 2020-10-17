@@ -66,9 +66,31 @@ when we get a value out from a dictionary using the key, the value is optional. 
         let actualAnswer = quiz[questionNumber].answer
     }
 
+    answer ->> external
+    userAnswer ->> internal
+
 OR: we do not need to define external parameter name
 
 func checkAnswer(_ userAnswer: String){}
+
+
+func myFunc(exname eman: Type){
+    print(eman)
+}
+
+when calling function:
+
+we can do myFunc(exname: val)
+
+or we can do
+
+myFunc(val) ---> but, this needs exname changed to '_'
+
+so func signature will be:
+
+func myFunc(_ eman: Type){
+    
+}
 
 15. struct is immutable
 
@@ -498,7 +520,7 @@ var aProperty: Int{
     return 2+5 // this is computation
 }
 
-
+31 codable --> type alias for Decoddable & Encodable
 
 
 

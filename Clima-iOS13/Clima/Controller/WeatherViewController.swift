@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WeatherViewController: UIViewController, UITextFieldDelegate {
+class WeatherViewController: UIViewController, UITextFieldDelegate, WeatherManagerDelegate {
 
     @IBOutlet weak var conditionImageView: UIImageView!
     @IBOutlet weak var temperatureLabel: UILabel!
@@ -22,6 +22,7 @@ class WeatherViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         //enable go button --> inform view controller about user's input
         searchTextField.delegate = self
+        weatherManager.delegate = self
     }
 
 
@@ -57,5 +58,15 @@ class WeatherViewController: UIViewController, UITextFieldDelegate {
         //clear the text field
         searchTextField.text = ""
     }
+    
+    //the first parameter is always the one that triggers this delegate method
+    func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel){
+        print(weather.temperature)
+    }
+    
+    func didFailWithError(error: Error) {
+        print(error)
+    }
+
 }
 
