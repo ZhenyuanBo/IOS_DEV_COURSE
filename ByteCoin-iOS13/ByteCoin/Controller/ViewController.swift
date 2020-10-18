@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class ViewController: UIViewController, UIPickerViewDataSource{
 
     @IBOutlet weak var bitcoinLabel: UILabel!
     @IBOutlet weak var currencyLabel: UILabel!
@@ -22,7 +22,10 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         currencyPicker.delegate = self
         coinManager.delegate = self
     }
-    
+}
+
+//MARK: - UIPickerViewDelegate
+extension ViewController: UIPickerViewDelegate{
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }

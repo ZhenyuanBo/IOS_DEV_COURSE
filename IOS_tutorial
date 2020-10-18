@@ -581,3 +581,7 @@ we don't need to provide an implementation of this method any more
 [locations] ----> locations.last ---> retrieve the last element of an array
 
 we use .last to retrieve
+
+31. segues 
+
+detailed explanation of segues can be found in lecture 187
