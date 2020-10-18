@@ -565,5 +565,19 @@ extension UIBUtton{
 
 extension SomeProtocol{
     //define default behavior
-    
+
 }
+
+//default implementation 
+extension CanFly(){
+    func fly(){
+        print("The object takes off into the air.")
+    }
+}
+
+whenever a protocol is adopted, this method will be automatically called. 
+we don't need to provide an implementation of this method any more
+
+[locations] ----> locations.last ---> retrieve the last element of an array
+
+we use .last to retrieve
