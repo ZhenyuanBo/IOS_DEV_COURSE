@@ -585,3 +585,50 @@ we use .last to retrieve
 31. segues 
 
 detailed explanation of segues can be found in lecture 187
+
+32 Set data type: 
+
+let fruits: Set = ["Apple", "Pear", "Orange"]
+
+order in this case doesn't matter
+
+let fruits: Array=["Apple", "Pear", "Orange"]
+
+order does matter in Array
+
+let contacts = ["Adam": 123456789, "James": 987654321, "Amy": 912837365]
+
+for person in contacts{
+    print(person.key)
+}
+
+for fruit in fruits{
+    print(fruit)
+}
+
+let closedRange = 1...5
+
+//we can let the code run number of times
+for _ in closedRange{
+    print("Loop is running")
+}
+
+
+while loops
+
+while somethingIsTrue{
+    print("Hello")
+}
+
+32. pod related commands
+
+pod install
+
+pod update (to update all the dependencies)
+
+
+
+
+
+
+
