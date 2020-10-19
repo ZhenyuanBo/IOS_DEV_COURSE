@@ -626,6 +626,11 @@ pod install
 
 pod update (to update all the dependencies)
 
+pod 'Firebase/Auth'
+
+33. differences between segues
+https://stackoverflow.com/questions/25966215/whats-the-difference-between-all-the-selection-segues
+
 
 
 
