@@ -632,6 +632,11 @@ pod 'Firebase/Auth'
 https://stackoverflow.com/questions/25966215/whats-the-difference-between-all-the-selection-segues
 
 
+34. command:
+
+command + b -> build
+shift + command + k ---> clean your project
+
 
 
 
