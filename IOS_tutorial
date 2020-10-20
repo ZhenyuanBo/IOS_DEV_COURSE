@@ -679,6 +679,63 @@ if neighbours[0] is Human{
 
 is: check a certain object is of a certain data type
 
+func findNemo(from animals: [Animal]){
+    for animal in animals{
+        if animal is Fish{
+            print(animal.name)
+            let fish = animal as! Fish        //as! is downcasting
+            fish.breatheUnderWater()
+        }
+    }
+}
+
+findNemo(from: neighbours)
+
+
+let messageCell = cell as! MessageCell ---> turn into subclass forced downcasting
+
+run time error: 
+
+let fish = neighbours[1] as! Fish
+
+let fish = neighbours[1] as? Fish ---> optional casting
+
+fish?.breatheUnderWater ?--> optional chaining: if fish is not a nil, then call the method
+
+
+as upcasting      --- cast subclass to SuperClass
+let animalFish = fish as Animal
+
+let num = 12
+
+if we add num into the neighbours array:
+
+let neighbours = [angela, jack, nemo, num] --- this is wrong 
+
+let neighbours: [Any] = [angela, jack, nemo, num] --- this is correct 
+
+let neighbours: [AnyObject] = [angela, jack, nemo, num]
+
+cannot convert value of ty[e 'Fish' to expected element type 'AnyObject' because 
+
+AnyObject requires all members come from class
+
+let neighbours: [NSObject] = [angela, jack, nemo] ---- this is wrong as they are not type NSObject
+
+
+let num: NSNumber = 12
+let word: NSString = "abc"
+
+let neighbours: [NSObject] = [num, word] -- this will work
+
+
+
+
+
+
+
+
+
 
 
 
