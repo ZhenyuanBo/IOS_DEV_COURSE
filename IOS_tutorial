@@ -637,6 +637,50 @@ https://stackoverflow.com/questions/25966215/whats-the-difference-between-all-th
 command + b -> build
 shift + command + k ---> clean your project
 
+35 Casting as？as! as is and Understand any
+
+Type casting:
+
+
+class Animal{
+    var name: String
+    init(n: String){
+        name = n
+    }
+}
+
+class Human: Animal{
+    func code(){
+        print("Typing away...")
+    }
+}
+
+class Fish: Animal{
+    func breatheUnderWater(){
+        print("Breathing under water.")
+    }
+}
+
+let angela = Human(n: "Angela Yu")
+
+let jack = Human(n: "Jack Bauer")
+
+let nemo = Fish(n: "Nemo")
+
+let neighbours = [angela, jack, nemo]
+
+neighbours [Animal]
+
+neighbours[0] ---> Animal class
+
+if neighbours[0] is Human{
+    print("this is a human")
+}
+
+is: check a certain object is of a certain data type
+
+
+
 
 
 
