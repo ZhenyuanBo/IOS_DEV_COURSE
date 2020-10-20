@@ -749,6 +749,19 @@ presentation: full screen
 covers the previous screen entirely
 
 
+segue knowledge article:
+https://stackoverflow.com/questions/37823521/prepareforsegue-and-performseguewithidentifier-sender
+
+36. 
+
+application life cycle
+
+scenedelegate.swift --> saves user's data before scene enters background 
+
+
+
+
+
 
 
 
