@@ -729,9 +729,24 @@ let word: NSString = "abc"
 let neighbours: [NSObject] = [num, word] -- this will work
 
 
+35. 
 
+1. viewDidLoad()
 
+2. viewWillAppear() ---> its the good time point to hide and show something
 
+3. viewDidAppear() ------> view is already on screen
+
+4. viewWillDisappear() ----> stop animation
+
+5. viewDidDisappear() ---> view is already off screen
+
+storyboard segue:
+
+kind: present modally
+presentation: full screen
+
+covers the previous screen entirely
 
 
 
