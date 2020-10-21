@@ -11,8 +11,8 @@ struct ContentView: View {
     var body: some View {
         
         ZStack {
-            Color(.green)
-                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            Color(red: 0.09, green: 0.63, blue: 0.52)
+                .edgesIgnoringSafeArea(.all)
             Text("Hello, World!")        .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
     }
