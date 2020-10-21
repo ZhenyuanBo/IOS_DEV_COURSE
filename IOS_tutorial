@@ -786,6 +786,12 @@ rm *
 
 remove a directory  ----> rm -r Angela/    
 
+39. 
+
+Swift UI:
+
+ignore safe area: use modifier edgesIgnoringSafeArea
+
 
 
 
