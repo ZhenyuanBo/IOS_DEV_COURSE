@@ -759,7 +759,13 @@ application life cycle
 scenedelegate.swift --> saves user's data before scene enters background 
 
 
+37. 
 
+ls -a includes all hidden files
+
+control + E to the end of the command Line 
+
+control + A to the beginning of the command Line
 
 
 
