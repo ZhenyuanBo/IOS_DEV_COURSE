@@ -767,6 +767,24 @@ control + E to the end of the command Line
 
 control + A to the beginning of the command Line
 
+38. 
+
+touch text2.txt ----- create a files
+
+mkdir ----- create a directory
+
+specify which application you want to open your file in
+open -a Atom Text2.txt  
+
+delete file
+
+rm Text.rtf ---- remove a file
+
+remove all files
+
+rm *
+
+remove a directory  ----> rm -r Angela/    
 
 
 
