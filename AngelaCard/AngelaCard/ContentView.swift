@@ -30,7 +30,11 @@ struct ContentView: View {
                 RoundedRectangle(cornerRadius: 25)
                     .fill(Color.white)
                     .frame(height: 50)
-                    .overlay(Text("+1 416-998-4954"))
+                    .overlay(HStack {
+                        Image(systemName:"phone.fill").foregroundColor(.green)
+                        Text("+1 416-998-4954")
+                    })
+                
             }
         }
     }
@@ -39,6 +43,9 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+            ContentView()
+        }
     }
 }

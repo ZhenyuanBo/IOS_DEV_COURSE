@@ -802,7 +802,7 @@ frame modifier change the size
 
 if we want to change the color of shape, or text we can use foregroundcolor modifier
 
-
+when using sf symbol, we need to use system name in Image()
 
 
 
