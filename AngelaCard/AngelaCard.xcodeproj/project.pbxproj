@@ -12,6 +12,8 @@
 		6E3DB8FF25409D1A00C92982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E3DB8FE25409D1A00C92982 /* Assets.xcassets */; };
 		6E3DB90225409D1A00C92982 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E3DB90125409D1A00C92982 /* Preview Assets.xcassets */; };
 		6E3DB90525409D1A00C92982 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E3DB90325409D1A00C92982 /* Main.storyboard */; };
+		6E3DB9172540F71F00C92982 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E3DB9162540F71F00C92982 /* Pacifico-Regular.ttf */; };
+		6E3DB91A2540FA1C00C92982 /* Commissioner-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E3DB9192540FA1C00C92982 /* Commissioner-VariableFont_wght.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		6E3DB90425409D1A00C92982 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E3DB90625409D1A00C92982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E3DB90725409D1A00C92982 /* AngelaCard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AngelaCard.entitlements; sourceTree = "<group>"; };
+		6E3DB9162540F71F00C92982 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		6E3DB9192540FA1C00C92982 /* Commissioner-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Commissioner-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 		6E3DB8F925409D1500C92982 /* AngelaCard */ = {
 			isa = PBXGroup;
 			children = (
+				6E3DB9152540F6D700C92982 /* fonts */,
 				6E3DB8FA25409D1500C92982 /* AppDelegate.swift */,
 				6E3DB8FC25409D1500C92982 /* ContentView.swift */,
 				6E3DB8FE25409D1A00C92982 /* Assets.xcassets */,
@@ -72,6 +77,15 @@
 				6E3DB90125409D1A00C92982 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6E3DB9152540F6D700C92982 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6E3DB9162540F71F00C92982 /* Pacifico-Regular.ttf */,
+				6E3DB9192540FA1C00C92982 /* Commissioner-VariableFont_wght.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,8 +146,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E3DB90525409D1A00C92982 /* Main.storyboard in Resources */,
+				6E3DB9172540F71F00C92982 /* Pacifico-Regular.ttf in Resources */,
 				6E3DB90225409D1A00C92982 /* Preview Assets.xcassets in Resources */,
 				6E3DB8FF25409D1A00C92982 /* Assets.xcassets in Resources */,
+				6E3DB91A2540FA1C00C92982 /* Commissioner-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -792,6 +792,15 @@ Swift UI:
 
 ignore safe area: use modifier edgesIgnoringSafeArea
 
+info list: 1). configure the setting for your project, for example font 2). in Clima Project, we added 
+privacy - allow in use 
+
+
+to put an element into a vstak, hold on the command key and hover on the element and select embed in vstack
+
+frame modifier change the size
+
+if we want to change the color of shape, or text we can use foregroundcolor modifier
 
 
 
