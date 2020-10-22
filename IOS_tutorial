@@ -805,6 +805,12 @@ if we want to change the color of shape, or text we can use foregroundcolor modi
 when using sf symbol, we need to use system name in Image()
 
 
+*********************
+named colors
+*********************
+this is covered in the clima module
+
+
 
 
 

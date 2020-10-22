@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  AngelaCard
-//
-//  Created by Zhenyuan Bo on 2020-10-21.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -27,14 +20,8 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .font(.system(size: 25))
                 Divider()
-                RoundedRectangle(cornerRadius: 25)
-                    .fill(Color.white)
-                    .frame(height: 50)
-                    .overlay(HStack {
-                        Image(systemName:"phone.fill").foregroundColor(.green)
-                        Text("+1 416-998-4954")
-                    })
-                
+                InfoView(text: "+1 416-997-0090")
+                InfoView(text: "zbo@gmail.com")
             }
         }
     }
@@ -43,9 +30,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            ContentView()
-            ContentView()
-        }
+        ContentView()
     }
 }
