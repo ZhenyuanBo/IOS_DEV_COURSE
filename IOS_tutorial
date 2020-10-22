@@ -804,6 +804,10 @@ if we want to change the color of shape, or text we can use foregroundcolor modi
 
 when using sf symbol, we need to use system name in Image()
 
+use resiable() to change the image size
+
+use padding() to leave margin 
+
 
 *********************
 named colors
