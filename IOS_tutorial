@@ -824,5 +824,17 @@ this is covered in the clima module
 IMPORTANT!!!!!
 to decode json api data, we need to create a structure to represent the data sent back
 
+in swiftUI, we need to conform our data manager class to a protocol called
+observerable
+
+the data that needs to be published must have @Published in the front
+
+all listeners will listen to the data being published
+
+in listener, we will have @ObservedObject for the property
+
+check H4XOR NEWS object
+
+use import WebKit for WebView
 
 
