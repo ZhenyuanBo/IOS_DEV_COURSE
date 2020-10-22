@@ -820,4 +820,9 @@ this is covered in the clima module
 @State wrapper to update properties in swiftui
 
 
+40
+IMPORTANT!!!!!
+to decode json api data, we need to create a structure to represent the data sent back
+
+
 
