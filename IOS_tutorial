@@ -840,6 +840,18 @@ use import WebKit for WebView
 
 41 Git and GitHub
 
+open a text file: open chapter1.txt
 
+initialize git: git init
 
+add file to the staging area:(pick which file in the working directory that you want to commit)
 
+git status check unchecked files
+
+git add add files to the staging area
+
+git commit -m "message" message by convention should be written in present tense
+
+git log 
+
+git add . (add everything in this current directory)
