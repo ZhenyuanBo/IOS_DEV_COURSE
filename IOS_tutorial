@@ -842,7 +842,7 @@ use import WebKit for WebView
 
 open a text file: open chapter1.txt
 
-initialize git: git init
+initialize git: git init (when we do git init, the directory becomes working directory)
 
 add file to the staging area:(pick which file in the working directory that you want to commit)
 
@@ -855,3 +855,19 @@ git commit -m "message" message by convention should be written in present tense
 git log 
 
 git add . (add everything in this current directory)
+
+after commit, files are located in the .git (local repository)
+
+check the differences between versions:
+
+git diff filename (e.g. git diff chapter3.txt)
+
+git checkout filename ---> roll back to the saved last version 
+
+create a remote repo 
+
+git remote add origin (origin is the name of the remote)
+
+git push -u origin master
+
+add DS file to the git ignore file
