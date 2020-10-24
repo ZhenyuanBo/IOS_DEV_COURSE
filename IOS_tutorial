@@ -871,3 +871,10 @@ git remote add origin (origin is the name of the remote)
 git push -u origin master
 
 add DS file to the git ignore file
+
+remove files from staging area command:
+
+git rm --cached -r . (. refers to the current working directory)
+
+we can use "#" to make comments in .gitignore file
+
