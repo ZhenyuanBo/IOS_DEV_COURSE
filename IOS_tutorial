@@ -971,6 +971,10 @@ Alternative:
 
 
 
+lazy keyword: lazy variable only occupy memory when it is needed
+
+NSPersistentContainer: SQLite Database
+
 
 
 
