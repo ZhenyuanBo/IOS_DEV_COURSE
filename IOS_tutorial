@@ -939,4 +939,29 @@ navigation bar background:
 1. click on navigation bar
 2. click on bar tint to set background color
 
-43. 
+43. persists data
+
+UserDefault
+
+let defaults = UserDefaults.standard
+defaults.set(0.24, forKey:"Volume")
+defaults.set(true, forKey: "MusicOn")
+defaults.set("Angela", forKey: "PlayerName")
+defaults.set(Date(), forKey: "AppLastOpenedByUser")
+
+let appLastOpen = defaults.object(forKey: "AppLastOpenedByUser")
+
+
+defaults.array()
+defaults.dictionary()
+
+persists data if it is just a small amount of data
+
+DON'T USE DEFAULTS TO SAVE Array
+
+singleton: always point to the same object, same file across multiple classes
+
+UserDefaults can't store an array of user-defined custom objects
+
+
+
