@@ -963,5 +963,10 @@ singleton: always point to the same object, same file across multiple classes
 
 UserDefaults can't store an array of user-defined custom objects
 
+Alternative: 
+1. save data to persist storage (a data file) using NSencode and NSdecode ---> codable (preverable on small bits of information)
+2. 
+
+
 
 
