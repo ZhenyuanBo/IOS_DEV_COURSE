@@ -878,3 +878,63 @@ git rm --cached -r . (. refers to the current working directory)
 
 we can use "#" to make comments in .gitignore file
 
+****************
+Note
+****************
+ALL secret key, api key, .DS_Store shoud be included in git ignore file
+
+
+Git Cloning
+
+git clone URL 
+
+we need to change bundle/team in cloned project in order to run on our own device
+
+create a new branch:
+
+git branch branch_name
+
+list out all branches created:
+
+git branch
+
+* shows the current branch you are currently on
+
+switch to a particular branch:
+
+git checkout branch_name
+
+
+merge branch command:
+
+git merge (sub_branch_name)
+
+to pull the content from the sub_branch, we need to be in the branch where we are going to do the 
+pulling
+
+1. create new pull request 
+2. merge pull requests
+
+create remote from Xcode
+1. add github account
+2. right click on the project and select new remote and create
+
+
+Forking:
+
+when you fork a git repo, you now have the full ownership and permission to the remote repository
+
+if the work is done and if your teammates want to merge some changes from the forked remote repo
+into your repo, they need to submit a pull request
+
+if a pull request is approved, then merge changes into the main remote repo
+
+42 Navigation Controller
+
+1. click on controller icon
+2. click on editor -> embed in -> navigation 
+
+navigation bar background:
+
+1. click on navigation bar
+2. click on bar tint to set background color

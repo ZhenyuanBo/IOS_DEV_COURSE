@@ -94,7 +94,6 @@
 				0B628174235DEE8100E35CAF /* Products */,
 				0B628181235DEE8400E35CAF /* LaunchScreen.storyboard */,
 				0B628184235DEE8400E35CAF /* Info.plist */,
-				0B628190235DF01B00E35CAF /* ChatViewController.swift */,
 				6E3DB8AC253E430100C92982 /* Constants.swift */,
 			);
 			path = "Flash Chat iOS13";
@@ -105,6 +104,7 @@
 			children = (
 				0B62818A235DF00000E35CAF /* WelcomeViewController.swift */,
 				0B62818C235DF00B00E35CAF /* RegisterViewController.swift */,
+				0B628190235DF01B00E35CAF /* ChatViewController.swift */,
 				0B62818E235DF01000E35CAF /* LoginViewController.swift */,
 			);
 			path = Controllers;
