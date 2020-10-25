@@ -965,7 +965,11 @@ UserDefaults can't store an array of user-defined custom objects
 
 Alternative: 
 1. save data to persist storage (a data file) using NSencode and NSdecode ---> codable (preverable on small bits of information)
-2. 
+2. SQLite
+3. Core Data - object-oriented database
+4. Realm - open source framework -- popular persisting data locally on device
+
+
 
 
 
