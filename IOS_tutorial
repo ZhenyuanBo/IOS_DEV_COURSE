@@ -975,7 +975,6 @@ lazy keyword: lazy variable only occupy memory when it is needed
 
 NSPersistentContainer: SQLite Database
 
-
 we perform CRUD in Context, instead of having direct contact with SQLite
 
 
