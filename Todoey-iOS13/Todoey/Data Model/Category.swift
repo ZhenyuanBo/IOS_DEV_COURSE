@@ -1,9 +1,7 @@
-//
-//  Category.swift
-//  Todoey
-//
-//  Created by Zhenyuan Bo on 2020-10-29.
-//  Copyright © 2020 App Brewery. All rights reserved.
-//
-
 import Foundation
+import RealmSwift
+
+class Category: Object{
+    @objc dynamic var name: String = ""
+    let item = List<Item>()
+}

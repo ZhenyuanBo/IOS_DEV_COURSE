@@ -978,10 +978,13 @@ NSPersistentContainer: SQLite Database
 we perform CRUD in Context, instead of having direct contact with SQLite
 
 
+44. dynamic variable - make the variable to be monitored during the run time
 
+if user makes a change to the variable, it allows realm to dynamically update data in the database
 
-
-
+let array = [Int]()
+let array: [Int] = [1, 2, 3]
+let array: Array<Int> = [1,2,3]
 
 
 
