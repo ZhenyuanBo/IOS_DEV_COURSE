@@ -987,4 +987,7 @@ let array: [Int] = [1, 2, 3]
 let array: Array<Int> = [1,2,3]
 
 
+45. objects in Realm are set to be auto-updating because of dynamic keyword
+
+
 
