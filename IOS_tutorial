@@ -989,5 +989,11 @@ let array: Array<Int> = [1,2,3]
 
 45. objects in Realm are set to be auto-updating because of dynamic keyword
 
+46. command click on the variable name to rename the variable
+
+47. open file -a application_name
+
+example: open Podfile -a Xcode
+
 
 
