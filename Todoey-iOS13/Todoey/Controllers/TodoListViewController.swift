@@ -4,6 +4,7 @@ import ChameleonFramework
 
 class TodoListViewController: SwipeTableViewController {
 
+    @IBOutlet weak var searchBar: UISearchBar!
     var todoItems : Results<Item>?
     let realm = try! Realm()
     
@@ -15,12 +16,24 @@ class TodoListViewController: SwipeTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //where the data is being stored for the current app
-        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
-        
         tableView.separatorStyle = .none
-
+        tableView.separatorStyle = .none
+    }
+    
+    //this function is called just before the view gets displayed
+    override func viewWillAppear(_ animated: Bool) {
+        if let colourHex = selectedCategory?.colour{
+            title = selectedCategory!.name
+            guard let navBar = navigationController?.navigationBar else{
+                fatalError("Navigation controller does not exist.")
+            }
+            if let navBarColour = UIColor(hexString: colourHex){
+                navBar.barTintColor = navBarColour
+                navBar.tintColor = ContrastColorOf(navBarColour, returnFlat: true)
+                navBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:ContrastColorOf(navBarColour, returnFlat: true)]
+                searchBar.barTintColor = navBarColour
+            }
+        }
     }
     
     //MARK: - datasource methods

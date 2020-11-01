@@ -11,12 +11,16 @@ class CategoryViewController: SwipeTableViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
-        
-        loadCategories()
-        
         tableView.separatorStyle = .none
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        guard let navBar = navigationController?.navigationBar else{
+            fatalError("Navigation controller does not exist.")
+        }
+        navBar.barTintColor = UIColor(hexString: "1D9BF6")
+        loadCategories()
     }
 
   
@@ -55,9 +59,15 @@ class CategoryViewController: SwipeTableViewController{
         
         let cell = super.tableView(tableView, cellForRowAt: indexPath)
         
-        cell.textLabel?.text = categories?[indexPath.row].name ?? "No Categories Added Yet"
-        
-        cell.backgroundColor = UIColor(hexString: categories?[indexPath.row].colour ?? "1390FF")
+        if let category = categories?[indexPath.row]{
+            cell.textLabel?.text = categories?[indexPath.row].name ?? "No Categories Added Yet"
+            
+            guard let categoryColour = UIColor(hexString: category.colour) else{
+                fatalError()
+            }
+            cell.backgroundColor = categoryColour
+            cell.textLabel?.textColor = ContrastColorOf(categoryColour, returnFlat: true)
+        }
 
         return cell
     }
